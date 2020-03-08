@@ -1,4 +1,4 @@
-console.log("This is developer region, Not for normal users!")
+console.log("%cThis is developer region, Not for normal users!🚀","color: Hotpink;background-color: black;padding:10px;border-radius:20px;margin:10px;font-size:1.25rem")
 const form = document.querySelector('form')
 const input = document.querySelector('input')
 const msg1 = document.querySelector('#msg-1')
@@ -16,8 +16,6 @@ form.addEventListener('submit',(e) => {
         else{
             msg1.textContent = data.location
             msg2.textContent = data.forecast
-            // console.log(data.location)  
-            // console.log(data.forecast)
         }
     })
 })

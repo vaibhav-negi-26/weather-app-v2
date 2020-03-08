@@ -20,6 +20,15 @@ body {
 .main-content img {
     border-radius: 20px;
     max-width: 350px;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.main-content p {
+   font-size: 1.25rem;
+   line-height: 2rem;
+   color: #333333;
 }
 
 header {
@@ -53,8 +62,12 @@ form input {
     font-size: 1.25rem;
     border-radius: 10px;
     outline: none;
+    border: none;
     transition: 0.25s ease-in-out;
     width: 250px;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 form button {
@@ -63,22 +76,27 @@ form button {
     outline: none;
     border-radius: 10px;
     border: none;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
     cursor: pointer;
+    
 }
 
 form button:hover {
-    background-color: crimson;
+    /* background: -webkit-linear-gradient(#c31432, #240b36); */
+    background-image: linear-gradient(to right, #ED213A, #93291E);
     color: white;
+    outline: none;
+    border: none;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .result p {
-    font-size: 72px;
     background: -webkit-linear-gradient(#1488CC, #2B32B2);
-    /* background: -webkit-linear-gradient( #26D0CE,#1A2980); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.25rem;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 3%;
+    font-weight: bold;
 }

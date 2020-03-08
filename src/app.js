@@ -34,7 +34,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'About',
-        msg: 'Hello there from Help Page.',
+        msg: 'Enter Your city in the input field on home page and hit search button, then wait for a couple of seconds forcast of your location will be displayed soon.',
         name: 'Vaibhav Singh Negi'
     })
 })
@@ -76,7 +76,6 @@ app.get('*', (req, res) => {
         CSS: 'css/style.css'
     })
 })
-
 app.listen(port, () => {
-    console.log('Listening on port 3000');
+    console.log('Listening on port '+port);
 })
