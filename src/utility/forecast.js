@@ -11,8 +11,7 @@ const forecast = (lat, long, callback) => {
         } else if (body.error) {
             callback("Unable to find location.", undefined)
         } else {
-            const result = `${body.daily.data[0].summary} It is currently ${body.currently.temperature} fahrenheit out there, There is a ${body.currently.precipProbability}% change of rain and
-            humidity is ${body.daily.data[0].humidity}`
+            const result = `${body.daily.data[0].summary} Current temperature is ${body.currently.temperature} °F, humidity is ${body.daily.data[0].humidity} and ${body.currently.precipProbability}% chance of rain.`
             callback(undefined,result)        
         }
     })
