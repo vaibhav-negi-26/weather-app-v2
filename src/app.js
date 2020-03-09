@@ -36,7 +36,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'About',
         msg: 'Enter Your city in the input field on home page and hit search button, then wait for a couple of seconds forcast of your location will be displayed soon.',
-        msg2: 'Your can also allow the Geolocation service so that we can access your location and tell your forecast automatically',
+        msg2: 'Your can also Allow the Geolocation service so that we can access your location and tell your forecast automatically',
         name: 'Vaibhav Singh Negi'
     })
 })

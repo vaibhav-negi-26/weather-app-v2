@@ -14,7 +14,7 @@ if (!navigator.geolocation) {
         const clong = position.coords.longitude
         msg1.textContent = 'Waiting for the response...'
         msg2.textContent = ''
-        fetch('/weather-allow?lat=' +clat+'&long='+clong).then((response) => {
+        fetch('/weather-allow?lat=' + clat + '&long=' + clong).then((response) => {
             response.json().then((data) => {
                 if (data.error) {
                     msg1.textContent = data.error
@@ -44,3 +44,17 @@ form.addEventListener('submit', (e) => {
         })
     })
 })
+
+// auto complete code for searn field
+
+var searchInput = 'search_input';
+
+$(document).ready(function () {
+    var autocomplete;
+    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+        types: ['geocode'],
+    });
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
+        var near_place = autocomplete.getPlace();
+    });
+});

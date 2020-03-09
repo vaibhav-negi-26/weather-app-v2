@@ -64,7 +64,7 @@ form input {
     outline: none;
     border: none;
     transition: 0.25s ease-in-out;
-    width: 250px;
+    width: 70%;
     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
