@@ -93,10 +93,16 @@ form button:hover {
 }
 
 .result p {
-    background: -webkit-linear-gradient(#1488CC, #2B32B2);
+    background: -webkit-linear-gradient(#1488CC,#2B32B2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.25rem;
     margin-top: 3%;
-    font-weight: bold;
+    font-family: lato;
+    font-weight: 600;
+}
+#main_p{
+    background: -webkit-linear-gradient(#e52d27,#b31217);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
