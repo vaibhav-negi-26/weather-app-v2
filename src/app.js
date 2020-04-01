@@ -5,7 +5,7 @@ const app = express()
 const geocode = require('./utility/geocode')
 const forecast = require('./utility/forecast')
 const rgeocode = require('./utility/rgeocode')
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 // Defining path for express config
 const publicDir = path.join(__dirname, '../public/')
